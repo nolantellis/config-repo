@@ -1,1 +1,10 @@
-env: prod
+spring:
+  datasource:
+    url: "jdbc:postgresql://192.168.99.100:5432/productdb"
+#    driverClassName: "org.postgresql.Driver"
+    username: productdb
+    password: productdb
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
