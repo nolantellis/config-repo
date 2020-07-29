@@ -1,13 +1,12 @@
 spring:
   datasource:
     url: "jdbc:postgresql://postgresql:5432/productdb"
-#    driverClassName: "org.postgresql.Driver"
     username: productdb
     password: productdb
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: validate
+#    hibernate:
+#      ddl-auto: validate
 
   flyway:
     locations: classpath:db/migration/postgres
